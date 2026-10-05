@@ -1,0 +1,19 @@
+# Build / deps
+node_modules/
+target/
+build/
+.svelte-kit/
+.output/
+
+# Secrets
+.env
+.env.*
+!.env.example
+deploy/graduss.env
+
+# Archives
+*.rar
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,15 @@
+{
+	"name": "graduss",
+	"short_name": "graduss",
+	"description": "Kasb egalari uchun jiddiy ijtimoiy tarmoq.",
+	"lang": "uz",
+	"start_url": "/feed",
+	"scope": "/",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#3730a3",
+	"icons": [
+		{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+		{ "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+	]
+}

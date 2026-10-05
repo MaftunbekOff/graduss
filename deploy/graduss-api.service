@@ -1,0 +1,24 @@
+[Unit]
+Description=graduss API (Rust/axum)
+After=network-online.target docker.service
+Wants=network-online.target
+
+[Service]
+User=graduss
+Group=graduss
+EnvironmentFile=/opt/graduss/graduss.env
+ExecStart=/opt/graduss/graduss-api
+Restart=on-failure
+RestartSec=3
+# Xotira va xavfsizlik cheklovlari (server boshqa xizmatlar bilan baham)
+MemoryMax=300M
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+
+[Install]
+WantedBy=multi-user.target
